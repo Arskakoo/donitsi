@@ -12,7 +12,7 @@ function init() {
     1,
     9000
   );
-  camera.position.set(7, 7, 7);
+  camera.position.set(2, 1, 1);
 
   // Create renderer
   renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -28,15 +28,15 @@ function init() {
   controls.maxPolarAngle = Math.PI / 2;
 
   // valot
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
   scene.add(ambientLight);
-  const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.4);
+  const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.6);
   directionalLight1.position.set(0, 10, 0);
   scene.add(directionalLight1);
-  const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
+  const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.4);
   directionalLight2.position.set(5, 5, 5);
   scene.add(directionalLight2);
-  const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.5);
+  const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.2);
   directionalLight3.position.set(-5, 5, -5);
   scene.add(directionalLight3);
 
